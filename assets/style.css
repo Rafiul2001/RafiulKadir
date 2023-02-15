@@ -48,7 +48,7 @@ a{
     justify-content: space-between;
     align-items: center;
 }
-.menu{
+#menu{
     display: none;
 }
 .logo{
@@ -301,7 +301,7 @@ a{
 /* ----------------------mobile view--------------------- */
 
 @media screen and (max-width: 700px) {
-    .menu{
+    #menu{
         display: block;
         margin-right: 20px;
         font-size: 30px;
