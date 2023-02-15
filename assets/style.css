@@ -48,6 +48,9 @@ a{
     justify-content: space-between;
     align-items: center;
 }
+.menu{
+    display: none;
+}
 .logo{
     margin-left: 15px;
     font-size: 40px;
@@ -298,6 +301,42 @@ a{
 /* ----------------------mobile view--------------------- */
 
 @media screen and (max-width: 700px) {
+    .menu{
+        display: block;
+        margin-right: 20px;
+        font-size: 30px;
+    }
+    .nav{
+        transition: 0.3s;
+        flex-direction: column;
+        position:fixed;
+        top: 0;
+        bottom: 0;
+        right: -250px;
+        z-index: 1;
+        width: 250px;
+        background: #ffecec;
+        align-items: flex-end;
+        justify-content: flex-start;
+    }
+    .nav li:nth-child(2){
+        align-self: center;
+    }
+    .nav li:nth-child(3){
+        align-self: center;
+    }
+    .nav li:nth-child(4){
+        align-self: center;
+    }
+    .buttons{
+        flex-direction: column;
+    }
+    .header-text h2{
+        font-size: 38px;
+    }
+    .header-text h1{
+        font-size: 48px;
+    }
     .h-img{
         display: none;
     }
@@ -331,7 +370,7 @@ a{
         width: 100%;
     }
     .header-image img{
-        height: 100%;
+        max-height: 400px;
         padding: 0;
     }
     .header-text{
